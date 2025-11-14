@@ -1,0 +1,32 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 211 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.32.230:3000/
+4:06:11 AM [vite] Pre-transform error: Failed to resolve import "yjs" from "src/components/CollaborativeEditor.jsx". Does the file exist?
+4:06:11 AM [vite] ✨ new dependencies optimized: nanoid
+4:06:11 AM [vite] ✨ optimized dependencies changed. reloading
+4:06:11 AM [vite] Pre-transform error: Failed to resolve import "yjs" from "src/components/CollaborativeEditor.jsx". Does the file exist?
+4:06:13 AM [vite] Internal server error: Failed to resolve import "yjs" from "src/components/CollaborativeEditor.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/workspace/src/components/CollaborativeEditor.jsx:2:19
+  1  |  import { jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import React, { useEffect, useMemo, useRef, useState } from "react";
+  3  |  import * as Y from "yjs";
+     |                      ^
+  4  |  import { WebrtcProvider } from "y-webrtc";
+  5  |  import { nanoid } from "nanoid";
+      at TransformPluginContext._formatError (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+      at TransformPluginContext.error (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+      at normalizeUrl (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64306:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64438:39
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64365:7)
+      at async PluginContainer.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+      at async loadAndTransform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+      at async viteTransformMiddleware (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
